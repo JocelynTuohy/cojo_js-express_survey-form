@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <fieldset>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="location">Dojo Location:</label>
+        <select name="location" id="location">
+          <option value="Bellevue">Bellevue</option>
+          <option value="Mountain View">Mountain View</option>
+          <option value="Chicago">Chicago</option>
+        </select>
+        <label for="language">Favorite Language:</label>
+        <select name="language" id="language">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Mandarin">Mandarin</option>
+        </select>
+        <label for="comment">Comment (optional):</label>
+        <textarea name="comment" id="comment" cols="50" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
